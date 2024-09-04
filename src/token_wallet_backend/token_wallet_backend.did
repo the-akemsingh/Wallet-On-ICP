@@ -1,0 +1,6 @@
+type AccountIdentifier = principal;
+
+service : {
+  "transfer" : (AccountIdentifier, Nat) -> (Result<(), Text>),
+  "get_balance" : () -> (Nat)
+};
